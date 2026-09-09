@@ -1,4 +1,4 @@
-# Speechify Agent Skills
+# SpeechifyAI Agent Skills
 
 Reusable [Agent Skills](https://agentskills.io/specification) for building with
 the **Speechify voice API** — text-to-speech, streaming, speech marks, voice
