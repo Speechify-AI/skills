@@ -11,19 +11,33 @@ Speechify API facts — verify them against the live source.**
 
 ## Install
 
-Any agent, via the open `skills` CLI:
-
-```bash
-npx skills add speechify-ai/skills                 # all skills
-npx skills add speechify-ai/skills --skill speechify-text-to-speech
-```
-
-Claude Code plugin marketplace:
+### Claude Code plugin (recommended)
 
 ```
-/plugin marketplace add speechify-ai/skills
+/plugin marketplace add Speechify-AI/skills
 /plugin install speechify@speechify-skills
 ```
+
+This installs all the skills **and** auto-registers the hosted `ask-speechify`
+MCP (`https://mcp.speechify.ai/mcp`, public, no key) so skills can verify facts
+against the live source — no separate setup step. Skills are then invokable as
+`/speechify:<skill-name>`.
+
+### Any agent, via the `skills` CLI
+
+Vercel's open [`skills`](https://www.npmjs.com/package/skills) CLI installs the
+raw skill folders into Claude Code, Cursor, Codex, and ~75 others:
+
+```bash
+npx skills add Speechify-AI/skills                              # all skills
+npx skills add Speechify-AI/skills --skill speechify-text-to-speech   # just one
+npx skills add Speechify-AI/skills -g                           # install globally
+npx skills add Speechify-AI/skills -a claude-code -a cursor     # pick agents
+```
+
+Installing this way doesn't bundle the MCP — run the `speechify-setup-mcp` skill
+(or `speechify mcp install`) to connect it. Every skill offers to do this if the
+MCP isn't present.
 
 ## What's here
 

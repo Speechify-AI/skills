@@ -26,6 +26,10 @@ IDs, voice fields, endpoints, and usage on demand instead of guessing.
 - **Tools:** `ask` (grounded natural-language answer + citations) and `search`
   (ranked source passages, no synthesis).
 
+> **Already installed the Claude Code plugin?** If you added
+> `speechify@speechify-skills` via `/plugin install`, this MCP is registered
+> automatically — you can skip the rest of this skill.
+
 ## Option A — direct (recommended)
 
 Claude Code:

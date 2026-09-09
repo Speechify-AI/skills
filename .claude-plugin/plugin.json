@@ -9,6 +9,5 @@
   "homepage": "https://github.com/Speechify-AI/skills",
   "repository": "https://github.com/Speechify-AI/skills",
   "license": "MIT",
-  "keywords": ["speechify", "text-to-speech", "tts", "voice", "audio", "voice-agents"],
-  "skills": "./skills"
+  "keywords": ["speechify", "text-to-speech", "tts", "voice", "audio", "voice-agents"]
 }

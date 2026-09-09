@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "speechify-ask": {
+      "type": "http",
+      "url": "https://mcp.speechify.ai/mcp",
+      "note": "Speechify's public knowledge MCP (ask + search) — grounded answers over Speechify's repos, SDKs, API reference, and docs. No API key required. Ships with this plugin so skills can verify facts against the live source."
+    }
+  }
+}
