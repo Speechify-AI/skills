@@ -17,17 +17,22 @@ metadata:
 # Multilingual synthesis
 
 To synthesise another language you need a **model that supports it** and a
-**voice that supports both the model and the language**. Language is driven by
-that pairing, not a standalone request field.
+**voice that covers it**, and you select the language with the top-level
+`language` request field (a BCP-47 tag such as `en-US` or `es-ES`). If `language`
+is omitted, the voice's own locale is used. So the model+voice pairing sets what
+is *possible*; `language` selects what you *get*.
 
 ## Steps
-1. Pick a multilingual model — e.g. `simba-3.0` supports English plus German,
-   Spanish, French, Italian, and Portuguese. **Verify the current language list
-   and model** via `models.list()` / `ask-speechify` — it grows.
+1. Pick a multilingual model — e.g. `simba-3.0` covers English plus German,
+   Spanish, French, Italian, and Portuguese (locales such as `es-ES` / `es-MX`).
+   **Verify the current language list and model** via `models.list()` /
+   `ask-speechify` — it grows.
 2. Pick a voice that supports that model and language via
    [`speechify-voices`](../speechify-voices/SKILL.md) (`voices.list()`), filtering
-   on language.
-3. Synthesise as usual ([`speechify-text-to-speech`](../speechify-text-to-speech/SKILL.md)).
+   on language/locale.
+3. Set the `language` field to your target BCP-47 tag (e.g. `es-ES`) — or leave
+   it unset to fall back to the voice's locale.
+4. Synthesise as usual ([`speechify-text-to-speech`](../speechify-text-to-speech/SKILL.md)).
 
 ## Language vs locale vs accent
 - **Language** — the tongue (e.g. Spanish).

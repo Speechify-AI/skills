@@ -17,10 +17,10 @@ metadata:
 # Speechify API key setup
 
 ## Get a key
-API keys are created in the Speechify console. Keys look like `sk_…`. If the
-user doesn't have one, point them to `https://console.sp.speechify.com` (confirm
-the current console URL via `ask-speechify` or the docs) and ask them to paste
-the key — **never fabricate a placeholder that looks real.**
+API keys are created in the Speechify developer dashboard at
+`https://platform.speechify.ai/api-keys` (signup, keys, and billing live there).
+Keys look like `sk_…`. If the user doesn't have one, point them there and ask
+them to paste the key — **never fabricate a placeholder that looks real.**
 
 ## Configure it (never hardcode)
 Read the key from the environment:

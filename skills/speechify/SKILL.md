@@ -42,7 +42,7 @@ If you can't confirm a fact, say so and go check — don't guess.
 - Base URL: `https://api.speechify.ai/v1/`
 - Auth: `Authorization: Bearer <SPEECHIFY_API_KEY>` (read from env; never hardcode).
 - One-shot synthesis: `POST /v1/audio/speech` → audio + speech marks + billing in one JSON response.
-- Streaming: `POST /v1/audio/stream`, `POST /v1/audio/stream-with-timestamps` (SSE).
+- Streaming: `POST /v1/audio/stream`, `POST /v1/audio/stream/with-timestamps` (SSE).
 - SDKs: Python (`Speechify-AI/sdk-python`), TypeScript (`Speechify-AI/sdk-typescript`).
 
 ## Route to the right skill

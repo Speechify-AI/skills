@@ -31,13 +31,15 @@ Or via SDK: `client.voices.list()` (Python / TypeScript). See
 [`speechify-sdks`](../speechify-sdks/SKILL.md).
 
 ## Choosing
-Each voice carries metadata — language(s), gender, style, and which models it
-supports. Filter on:
-- **Language/locale** — must match your target language and model (see
-  [`speechify-multilingual`](../speechify-multilingual/SKILL.md)).
-- **Model support** — confirm the voice works with the model you plan to use
+Each voice carries metadata — confirmed fields include `id`, `display_name`,
+`locale`, `gender`, `type` (e.g. shared vs a `personal`/cloned voice), and
+`models` (which models it supports). Filter on:
+- **Language/locale** — the voice's `locale` must match your target language and
+  model (see [`speechify-multilingual`](../speechify-multilingual/SKILL.md)).
+- **Model support** — check `models` covers the model you plan to use
   ([`speechify-models`](../speechify-models/SKILL.md)).
-- **Style/persona** — pick by preview where available.
+- **Persona** — pick by `display_name` / `gender`, and audition candidates by
+  synthesising a short sample.
 
 ## Verify first
 Confirm the exact response fields (`id` vs `voice_id`, nested language objects)

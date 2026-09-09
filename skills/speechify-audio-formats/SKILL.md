@@ -18,7 +18,7 @@ metadata:
 
 Two request fields control output:
 
-- **`audio_format`** — container/codec: `mp3`, `wav`, `ogg`, `aac`.
+- **`audio_format`** — container/codec: `mp3`, `wav`, `ogg`, `aac`, `pcm` (default `wav`).
 - **`output_format`** — granular sample-rate/bitrate control (e.g. `pcm_16000`,
   `pcm_24000`, `ulaw_8000`, `mp3_24000_128`). When present it **takes precedence**
   over `audio_format`.

@@ -24,13 +24,19 @@ Only clone a voice you have permission to clone. Confirm the user has rights/
 consent for the source recording before proceeding.
 
 ## Flow
-1. Provide a clean speech sample — typically **10–30 seconds**, single speaker,
-   minimal background noise. (Confirm current duration/format requirements via
+1. Provide a clean speech sample — **10–30 seconds**, single speaker, minimal
+   background noise. (Confirm current duration/format requirements via
    `ask-speechify` or `https://docs.speechify.ai/tts/guides/voice-cloning`.)
-2. Create the voice via the voice-cloning endpoint / SDK method (verify the exact
-   endpoint and request shape live — it changes).
-3. Use the returned `voice_id` in `POST /v1/audio/speech` or the streaming
-   endpoints, exactly like a stock voice.
+2. **Complete the consent challenge (now required).** Create one via
+   `POST /v1/voices/consent-challenges`, then pass its `consent_challenge_id`
+   plus a `consent_recording` file (a spoken-consent clip, ~5–30s, ≤25 MB) when
+   creating the voice. This is the default from `Speechify-Version: 2026-09-13`;
+   omitting it returns a `400`.
+3. Create the voice — `POST /v1/voices` / `client.voices.create()`. Verify the
+   exact request shape live — it changes.
+4. Use the returned `voice_id` in `POST /v1/audio/speech` or the streaming
+   endpoints, exactly like a stock voice. Cloned voices also appear in
+   `voices.list()` (with `type: personal`).
 
 ## Verify first
 The create-voice endpoint path, accepted sample formats, and duration limits are

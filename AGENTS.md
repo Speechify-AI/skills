@@ -27,7 +27,7 @@ detail; this file carries the golden rules that apply to all of them.
 
 5. **Match the transport to the job.** One-shot audio → `/v1/audio/speech`.
    Realtime / first-byte latency → `/v1/audio/stream`. Need timestamps →
-   `-with-timestamps`. See `speechify-streaming`, `speechify-speech-marks`.
+   `/v1/audio/stream/with-timestamps`. See `speechify-streaming`, `speechify-speech-marks`.
 
 6. **Prove it works before declaring done.** Synthesise real audio, play it or
    check the bytes, and exercise the actual flow — not just a compile.

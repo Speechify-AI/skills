@@ -51,7 +51,7 @@ Surveyed 2026-09. All figures are the published, first-party skill sets.
 From the API reference, SDKs, cookbook (63 recipes), and demos (26):
 
 - **TTS** — `POST /v1/audio/speech` (text or SSML → audio + speech marks + billing in one JSON response).
-- **Streaming** — `POST /v1/audio/stream` and `POST /v1/audio/stream-with-timestamps` (SSE; `speech.chunk` / `speech.done` events; base64 audio; `Speechify-Audio-Content-Type` header).
+- **Streaming** — `POST /v1/audio/stream` and `POST /v1/audio/stream/with-timestamps` (SSE; `speech.chunk` / `speech.done` events; base64 audio; `Speechify-Audio-Content-Type` header).
 - **Models** — `simba-3.2` (English, lowest latency), `simba-3.0` (multilingual: en, de, es, fr, it, pt). Legacy `simba-english` / `simba-multilingual` are retiring (`400 model_retired` after 2026-09-21; off 2026-11-21). Verify the live list via `models.list()`.
 - **Voices** — list / filter / metadata; **voice cloning** from a 10–30s sample.
 - **Speech marks** — word/char timestamps; times are absolute ms from synthesis start.
@@ -76,7 +76,7 @@ architecture-first like LiveKit, journey-organised like Deepgram.
 
 ### Tier 1 — Core TTS product skills
 - **`speechify-text-to-speech`** — synthesise speech from text/SSML via `/v1/audio/speech`.
-- **`speechify-streaming`** — low-latency streaming via `/v1/audio/stream(-with-timestamps)`; web/CLI playback.
+- **`speechify-streaming`** — low-latency streaming via `/v1/audio/stream and /stream/with-timestamps`; web/CLI playback.
 - **`speechify-speech-marks`** — word/char timestamps → captions, subtitles, karaoke highlighting.
 - **`speechify-voices`** — list, filter, and choose voices; language/model support.
 - **`speechify-voice-cloning`** — clone a voice from a sample and synthesise with it.

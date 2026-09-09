@@ -20,8 +20,8 @@ Speechify ships two official SDKs plus a CLI. Prefer an SDK for typed access,
 base64/stream handling, and less boilerplate; use raw REST ("native") when you
 need full control or a language without an SDK.
 
-- Python — `Speechify-AI/sdk-python`
-- TypeScript — `Speechify-AI/sdk-typescript`
+- Python — `Speechify-AI/sdk-python` (PyPI `speechify-api`)
+- TypeScript — `Speechify-AI/sdk-typescript` (npm `@speechify/api`)
 
 ## Verify first
 Package names, install commands, client class names, and method signatures
@@ -31,15 +31,20 @@ writing code — don't assume from memory. Pin the SDK version.
 
 ## Initialize (shape only — confirm exact API live)
 ```python
-# Python — confirm package name & client from sdk-python README
+# Python — pip install speechify-api
 from speechify import Speechify
-client = Speechify(token="...")  # read from SPEECHIFY_API_KEY env
+client = Speechify(token="...")  # pass the value of SPEECHIFY_API_KEY
 ```
 ```ts
-// TypeScript — confirm package name & client from sdk-typescript README
-import { Speechify } from "@speechify/...";
-const client = new Speechify({ token: process.env.SPEECHIFY_API_KEY });
+// TypeScript — npm i @speechify/api
+import { SpeechifyClient } from "@speechify/api";
+const client = new SpeechifyClient({ token: process.env.SPEECHIFY_API_KEY });
+// Note: the `Speechify` export is a TYPES namespace (e.g. Speechify.GetSpeechRequest),
+// not a client — instantiate SpeechifyClient, not Speechify.
 ```
+
+Both constructors also accept a `version` option (the dated `Speechify-Version`)
+— pin it for stable behaviour (see [`speechify-models`](../speechify-models/SKILL.md)).
 
 Discovery helpers exist on the client: `client.models.list()`,
 `client.voices.list()`.

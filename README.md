@@ -32,7 +32,7 @@ Claude Code plugin marketplace:
 | `speechify` | Entry point — routes to the right skill and carries the core doctrine. |
 | `speechify-setup-api-key` | Get, validate, and configure `SPEECHIFY_API_KEY`. |
 | `speechify-text-to-speech` | Synthesise speech from text or SSML (`/v1/audio/speech`). |
-| `speechify-streaming` | Low-latency streaming (`/v1/audio/stream(-with-timestamps)`). |
+| `speechify-streaming` | Low-latency streaming (`/v1/audio/stream and /stream/with-timestamps`). |
 | `speechify-speech-marks` | Word/char timestamps → captions, subtitles, highlighting. |
 | `speechify-voices` | List, filter, and choose voices. |
 | `speechify-voice-cloning` | Clone a voice from a sample and synthesise with it. |

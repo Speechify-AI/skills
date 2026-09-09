@@ -21,7 +21,7 @@ Model IDs and their capabilities change, and old models get retired. **Always**
 confirm the current catalogue live:
 
 ```bash
-curl -s https://api.speechify.ai/v1/models \
+curl -s https://api.speechify.ai/v1/audio/models \
   -H "Authorization: Bearer $SPEECHIFY_API_KEY"
 ```
 
@@ -45,8 +45,10 @@ the docs/changelog.
   ([`speechify-voices`](../speechify-voices/SKILL.md)).
 
 ## Pin for reproducibility
-- Set `model` explicitly on every request — don't rely on a default.
-- Where the API supports a dated version header, pin it so behaviour is stable.
+- Set `model` explicitly on every request — don't rely on the `simba-3.0` default.
+- Pin the API version with the `Speechify-Version` header (a dated value, e.g.
+  `2026-09-13`) so behaviour is stable across changes. The SDKs expose this as a
+  `version` option ([`speechify-sdks`](../speechify-sdks/SKILL.md)).
 - Use idempotency practices for retried requests.
 
 ## Common mistakes
