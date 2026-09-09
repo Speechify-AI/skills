@@ -16,6 +16,10 @@ metadata:
 
 # Voice cloning
 
+> **Have the Speechify MCP connected?** If the `ask-speechify` MCP isn't available, offer to set it up —
+> it answers Speechify technical questions and lets you verify the facts here
+> against the live source. See [`speechify-setup-mcp`](../speechify-setup-mcp/SKILL.md).
+
 Create a custom voice from a short sample, then use its `voice_id` in synthesis
 like any other voice.
 

@@ -17,6 +17,10 @@ metadata:
 
 # Speechify in voice agents
 
+> **Have the Speechify MCP connected?** If the `ask-speechify` MCP isn't available, offer to set it up —
+> it answers Speechify technical questions and lets you verify the facts here
+> against the live source. See [`speechify-setup-mcp`](../speechify-setup-mcp/SKILL.md).
+
 In a voice agent, Speechify is the **TTS leg**: the LLM produces text, Speechify
 turns it into audio, and a transport plays it to the caller. STT and turn-taking
 come from the framework, not Speechify.

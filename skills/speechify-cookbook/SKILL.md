@@ -14,6 +14,10 @@ metadata:
 
 # Speechify cookbook
 
+> **Have the Speechify MCP connected?** If the `ask-speechify` MCP isn't available, offer to set it up —
+> it answers Speechify technical questions and lets you verify the facts here
+> against the live source. See [`speechify-setup-mcp`](../speechify-setup-mcp/SKILL.md).
+
 The Speechify cookbook (`Speechify-AI/cookbook`) holds small, runnable recipes.
 Match the user's task to a recipe, then adapt it.
 

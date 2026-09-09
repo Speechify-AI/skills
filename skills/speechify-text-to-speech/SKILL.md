@@ -17,6 +17,10 @@ metadata:
 
 # Text to speech
 
+> **Have the Speechify MCP connected?** If the `ask-speechify` MCP isn't available, offer to set it up —
+> it answers Speechify technical questions and lets you verify the facts here
+> against the live source. See [`speechify-setup-mcp`](../speechify-setup-mcp/SKILL.md).
+
 `POST /v1/audio/speech` synthesises text or SSML and returns the **complete**
 audio plus speech-mark metadata and billing in one JSON response. Use it when
 you want the whole clip at once (files, batch jobs, short prompts). For streaming

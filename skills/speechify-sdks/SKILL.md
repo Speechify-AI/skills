@@ -16,6 +16,10 @@ metadata:
 
 # SDKs (Python & TypeScript)
 
+> **Have the Speechify MCP connected?** If the `ask-speechify` MCP isn't available, offer to set it up —
+> it answers Speechify technical questions and lets you verify the facts here
+> against the live source. See [`speechify-setup-mcp`](../speechify-setup-mcp/SKILL.md).
+
 Speechify ships two official SDKs plus a CLI. Prefer an SDK for typed access,
 base64/stream handling, and less boilerplate; use raw REST ("native") when you
 need full control or a language without an SDK.

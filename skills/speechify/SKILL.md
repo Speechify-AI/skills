@@ -18,6 +18,10 @@ metadata:
 
 # Building with Speechify
 
+> **Have the Speechify MCP connected?** If the `ask-speechify` MCP isn't available, offer to set it up —
+> it answers Speechify technical questions and lets you verify the facts here
+> against the live source. See [`speechify-setup-mcp`](../speechify-setup-mcp/SKILL.md).
+
 Speechify is a **text-to-speech** platform: turn text or SSML into natural
 speech, stream it with low latency, get word-level timestamps, clone voices, and
 plug it into voice agents as the TTS leg. This skill orients you and routes to
@@ -61,6 +65,8 @@ If you can't confirm a fact, say so and go check — don't guess.
 | Which model, deprecation, version pinning | [`speechify-models`](../speechify-models/SKILL.md) |
 | Speechify inside LiveKit/Pipecat/Vapi/Twilio/AI SDK | [`speechify-voice-agents`](../speechify-voice-agents/SKILL.md) |
 | Installing/using the Python or TS SDK | [`speechify-sdks`](../speechify-sdks/SKILL.md) |
+| Driving the API from a terminal / CI | [`speechify-cli`](../speechify-cli/SKILL.md) |
+| Connecting the ask-speechify knowledge MCP | [`speechify-setup-mcp`](../speechify-setup-mcp/SKILL.md) |
 | Finding a code recipe | [`speechify-cookbook`](../speechify-cookbook/SKILL.md) |
 | Finding a runnable demo to clone | [`speechify-demos`](../speechify-demos/SKILL.md) |
 
