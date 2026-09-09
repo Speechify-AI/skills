@@ -89,7 +89,7 @@ the conventions adopted, and what was deliberately deferred — is in
 ## Contributing
 
 Authoring conventions and a skill template are in
-[`CONTRIBUTING.md`](CONTRIBUTING.md) and [`templates/SKILL.md`](templates/SKILL.md).
+[`CONTRIBUTING.md`](CONTRIBUTING.md) and [`templates/SKILL.template.md`](templates/SKILL.template.md).
 
 ## License
 
