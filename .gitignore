@@ -1,0 +1,22 @@
+# Agent scratch space (per home doctrine)
+/.claude/
+/.opencode/
+/.overseer/
+/.agents/
+
+# Dependencies / build
+node_modules/
+dist/
+build/
+*.tsbuildinfo
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+*.log
+.idea/
+.vscode/

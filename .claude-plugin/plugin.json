@@ -1,0 +1,14 @@
+{
+  "name": "speechify",
+  "version": "0.1.0",
+  "description": "Text-to-speech, streaming, speech marks, voice cloning, SSML, and voice-agent integrations for the Speechify voice API.",
+  "author": {
+    "name": "Speechify",
+    "url": "https://github.com/Speechify-AI"
+  },
+  "homepage": "https://github.com/Speechify-AI/skills",
+  "repository": "https://github.com/Speechify-AI/skills",
+  "license": "MIT",
+  "keywords": ["speechify", "text-to-speech", "tts", "voice", "audio", "voice-agents"],
+  "skills": "./skills"
+}

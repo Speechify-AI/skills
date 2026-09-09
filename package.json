@@ -1,0 +1,23 @@
+{
+  "name": "@speechify-ai/skills",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Agent Skills for building with the Speechify voice API — text-to-speech, streaming, speech marks, voice cloning, SSML, and voice-agent integrations.",
+  "license": "MIT",
+  "homepage": "https://github.com/Speechify-AI/skills",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Speechify-AI/skills.git"
+  },
+  "keywords": [
+    "speechify",
+    "agent-skills",
+    "claude-code",
+    "text-to-speech",
+    "tts",
+    "voice",
+    "voice-cloning",
+    "speech-marks",
+    "voice-agents"
+  ]
+}

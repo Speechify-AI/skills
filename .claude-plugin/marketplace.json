@@ -1,0 +1,20 @@
+{
+  "name": "speechify-skills",
+  "owner": {
+    "name": "Speechify",
+    "url": "https://github.com/Speechify-AI"
+  },
+  "metadata": {
+    "description": "Agent Skills for building with the Speechify voice API.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "speechify",
+      "source": "./",
+      "description": "Text-to-speech, streaming, speech marks, voice cloning, SSML, and voice-agent integrations for the Speechify voice API.",
+      "category": "audio",
+      "license": "MIT"
+    }
+  ]
+}
