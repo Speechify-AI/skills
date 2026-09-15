@@ -41,6 +41,24 @@ read that list rather than guessing.
 For telephony and voice-agent transports the sample rate must match what the
 transport expects — mismatched rates cause chipmunk/slow-motion audio.
 
+### `pcm_16000` is version-gated — check the pin before recommending it
+On a workspace pinned **before API version `2026-09-30`**, the Simba 3 models
+answer `pcm_16000` with 24 kHz samples labelled `rate=16000`. Fed to a 16 kHz
+pipeline (Twilio, LiveKit SIP) that plays **1.5x slow and pitched down**. It is
+not an error and nothing reports it — the audio is just wrong.
+
+A workspace created on or after `2026-09-30` is already correct, as is any
+workspace that has moved its pin; an older pin keeps the bytes it has always
+received, deliberately, because an integration built against 24 kHz breaks the
+moment they change.
+
+So on an older pin: move the pin, or use `ulaw_8000`, or keep playing the audio
+at 24 kHz until you move. Never hand someone `pcm_16000` for telephony without
+saying which of those applies to them.
+
+See [Audio Formats](https://docs.speechify.ai/build/guides/concepts/audio-formats)
+and the [changelog](https://docs.speechify.ai/build/changelog/2026/9/30).
+
 ## Verify first
 The exact set of accepted `output_format` values changes. Confirm the current
 list via the `400` error body, `https://docs.speechify.ai` (append `.md`), or
