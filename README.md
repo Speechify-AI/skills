@@ -18,8 +18,8 @@ Speechify API facts — verify them against the live source.**
 /plugin install speechify@speechify-skills
 ```
 
-This installs all the skills **and** auto-registers the hosted `ask-speechify`
-MCP (`https://mcp.speechify.ai/mcp`, public, no key) so skills can verify facts
+This installs all the skills **and** auto-registers the hosted `speechify-docs`
+MCP (`https://docs.speechify.ai/_mcp/server`, public, no key) so skills can verify facts
 against the live source — no separate setup step. Skills are then invokable as
 `/speechify:<skill-name>`.
 
@@ -57,7 +57,7 @@ MCP isn't present.
 | `speechify-voice-agents` | Speechify as the TTS leg in LiveKit / Pipecat / Vapi / Twilio / AI SDK. |
 | `speechify-sdks` | Install/init the Python & TypeScript SDKs; native vs SDK. |
 | `speechify-cli` | Install and use the `speechify` CLI (`@speechify/cli`) from a terminal/CI. |
-| `speechify-setup-mcp` | Connect the hosted Speechify knowledge MCP (`mcp.speechify.ai`) to your editor. |
+| `speechify-setup-mcp` | Connect the hosted Speechify docs MCP (`docs.speechify.ai/_mcp/server`) to your editor. |
 | `speechify-cookbook` | Match a task to one of the cookbook recipes. |
 | `speechify-demos` | Match a use case to a clonable demo. |
 
@@ -67,8 +67,8 @@ Model IDs, voice IDs, endpoints, request fields, output formats, and version
 dates **change**. Every skill defers those to a live source instead of baking
 them in:
 
-- **`ask-speechify` MCP** — grounded answers over Speechify's repos, SDKs, API
-  reference, and docs. Hosted at `https://mcp.speechify.ai/mcp` (public, no key);
+- **`speechify-docs` MCP** — searches the Speechify docs and API reference
+  (`searchDocs`) and returns passages with their source URLs. Hosted at `https://docs.speechify.ai/_mcp/server` (public, no key);
   connect it with the `speechify-setup-mcp` skill. Every skill offers to set it
   up if it isn't connected.
 - **Docs** — `https://docs.speechify.ai` (append `.md` to any page for

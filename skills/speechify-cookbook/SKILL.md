@@ -14,7 +14,7 @@ metadata:
 
 # Speechify cookbook
 
-> **Have the Speechify MCP connected?** If the `ask-speechify` MCP isn't available, offer to set it up —
+> **Have the Speechify MCP connected?** If the `speechify-docs` MCP isn't available, offer to set it up —
 > it answers Speechify technical questions and lets you verify the facts here
 > against the live source. See [`speechify-setup-mcp`](../speechify-setup-mcp/SKILL.md).
 
@@ -43,7 +43,7 @@ Match the user's task to a recipe, then adapt it.
 
 ## Verify first
 The recipe set grows and paths change. Confirm the current list and exact path
-via the `ask-speechify` MCP or the cookbook repo before linking a user to one —
+via the `speechify-docs` MCP or the cookbook repo before linking a user to one —
 the table above is a map, not a guarantee.
 
 Path shape: `recipes/audio/<language>/<native|sdk>/<topic>/`.

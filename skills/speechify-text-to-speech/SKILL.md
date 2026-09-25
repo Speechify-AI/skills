@@ -17,7 +17,7 @@ metadata:
 
 # Text to speech
 
-> **Have the Speechify MCP connected?** If the `ask-speechify` MCP isn't available, offer to set it up —
+> **Have the Speechify MCP connected?** If the `speechify-docs` MCP isn't available, offer to set it up —
 > it answers Speechify technical questions and lets you verify the facts here
 > against the live source. See [`speechify-setup-mcp`](../speechify-setup-mcp/SKILL.md).
 
@@ -28,7 +28,7 @@ playback, use [`speechify-streaming`](../speechify-streaming/SKILL.md).
 
 ## Verify first
 `voice_id`, `model`, and the accepted `output_format` values change. Confirm the
-current ones via `voices.list()` / `models.list()`, the `ask-speechify` MCP, or
+current ones via `voices.list()` / `models.list()`, the `speechify-docs` MCP, or
 `https://docs.speechify.ai` before hardcoding them. See
 [`speechify-models`](../speechify-models/SKILL.md) and
 [`speechify-voices`](../speechify-voices/SKILL.md).

@@ -16,7 +16,7 @@ metadata:
 
 # SDKs (Python & TypeScript)
 
-> **Have the Speechify MCP connected?** If the `ask-speechify` MCP isn't available, offer to set it up —
+> **Have the Speechify MCP connected?** If the `speechify-docs` MCP isn't available, offer to set it up —
 > it answers Speechify technical questions and lets you verify the facts here
 > against the live source. See [`speechify-setup-mcp`](../speechify-setup-mcp/SKILL.md).
 
@@ -30,7 +30,7 @@ need full control or a language without an SDK.
 ## Verify first
 Package names, install commands, client class names, and method signatures
 change between SDK versions. **Confirm the current install command and client API
-from the SDK repo's README, `ask-speechify`, or the package registry** before
+from the SDK repo's README, `speechify-docs`, or the package registry** before
 writing code — don't assume from memory. Pin the SDK version.
 
 ## Initialize (shape only — confirm exact API live)

@@ -6,7 +6,7 @@ description: >
   endpoint. Use when the user wants to "use Speechify from the command line",
   "install the Speechify CLI", "run speechify say", "log in to the CLI", or script
   TTS in a shell/CI. For app code use the SDKs (`speechify-sdks`); for connecting
-  the knowledge MCP see `speechify-setup-mcp`.
+  the docs MCP see `speechify-setup-mcp`.
 license: MIT
 metadata:
   author: Speechify
@@ -17,7 +17,7 @@ metadata:
 
 # Speechify CLI
 
-> **Have the Speechify MCP connected?** If the `ask-speechify` MCP isn't available, offer to set it up —
+> **Have the Speechify MCP connected?** If the `speechify-docs` MCP isn't available, offer to set it up —
 > it answers Speechify technical questions and lets you verify the facts here
 > against the live source. See [`speechify-setup-mcp`](../speechify-setup-mcp/SKILL.md).
 
@@ -55,7 +55,7 @@ speechify api /v1/audio/speech -f input="hello" -f voice_id=george   # -f implie
 `say --format` accepts `wav | mp3 | ogg | aac | pcm` (default `mp3`). Add `--json`
 to any command for machine-readable stdout.
 
-## Connect the knowledge MCP
+## Connect the docs MCP
 ```bash
 speechify mcp install --client claude-code   # wire the hosted MCP into your editor
 ```

@@ -16,7 +16,7 @@ metadata:
 
 # SSML & emotion
 
-> **Have the Speechify MCP connected?** If the `ask-speechify` MCP isn't available, offer to set it up —
+> **Have the Speechify MCP connected?** If the `speechify-docs` MCP isn't available, offer to set it up —
 > it answers Speechify technical questions and lets you verify the facts here
 > against the live source. See [`speechify-setup-mcp`](../speechify-setup-mcp/SKILL.md).
 
@@ -48,7 +48,7 @@ or `serious` — reach for `energetic` / `direct` instead.
 ## Verify first
 The **exact supported SSML tags, attributes, and emotion values are
 model-dependent and change.** Confirm the current set against
-`https://docs.speechify.ai` (append `.md`) or the `ask-speechify` MCP before
+`https://docs.speechify.ai` (append `.md`) or the `speechify-docs` MCP before
 relying on a specific tag — an unsupported tag may be ignored or error.
 
 ## Common mistakes

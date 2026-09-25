@@ -17,7 +17,7 @@ metadata:
 
 # Streaming TTS
 
-> **Have the Speechify MCP connected?** If the `ask-speechify` MCP isn't available, offer to set it up —
+> **Have the Speechify MCP connected?** If the `speechify-docs` MCP isn't available, offer to set it up —
 > it answers Speechify technical questions and lets you verify the facts here
 > against the live source. See [`speechify-setup-mcp`](../speechify-setup-mcp/SKILL.md).
 
@@ -31,7 +31,7 @@ for realtime UX and voice agents.
 ## Verify first
 Endpoint paths, event names, and field shapes evolve. Confirm the current SSE
 contract via `https://docs.speechify.ai/build/api-reference/v1/audio/stream`
-(append `.md`) or the `ask-speechify` MCP before implementing a parser.
+(append `.md`) or the `speechify-docs` MCP before implementing a parser.
 
 ## SSE contract (stream/with-timestamps)
 - The stream emits `speech.chunk` events; each carries a base64-encoded run of

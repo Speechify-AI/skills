@@ -16,7 +16,7 @@ metadata:
 
 # Voice cloning
 
-> **Have the Speechify MCP connected?** If the `ask-speechify` MCP isn't available, offer to set it up —
+> **Have the Speechify MCP connected?** If the `speechify-docs` MCP isn't available, offer to set it up —
 > it answers Speechify technical questions and lets you verify the facts here
 > against the live source. See [`speechify-setup-mcp`](../speechify-setup-mcp/SKILL.md).
 
@@ -30,7 +30,7 @@ consent for the source recording before proceeding.
 ## Flow
 1. Provide a clean speech sample — **10–30 seconds**, single speaker, minimal
    background noise. (Confirm current duration/format requirements via
-   `ask-speechify` or `https://docs.speechify.ai/tts/guides/voice-cloning`.)
+   `speechify-docs` or `https://docs.speechify.ai/tts/guides/voice-cloning`.)
 2. **Complete the consent challenge (now required).** Create one via
    `POST /v1/voices/consent-challenges`, then pass its `consent_challenge_id`
    plus a `consent_recording` file (a spoken-consent clip, ~5–30s, ≤25 MB) when
@@ -44,7 +44,7 @@ consent for the source recording before proceeding.
 
 ## Verify first
 The create-voice endpoint path, accepted sample formats, and duration limits are
-volatile — confirm against the live docs / `ask-speechify` before implementing.
+volatile — confirm against the live docs / `speechify-docs` before implementing.
 List your cloned voices with `voices.list()` (they appear alongside stock voices).
 
 ## Common mistakes

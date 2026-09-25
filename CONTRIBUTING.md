@@ -53,7 +53,7 @@ A reliable structure (borrowed from the field's best sets):
 Do **not** bake in volatile facts (model IDs, voice IDs, endpoints, output
 formats, version dates). Reference the live source instead:
 
-- `ask-speechify` MCP
+- `speechify-docs` MCP
 - `https://docs.speechify.ai` (append `.md` to any page)
 - SDK discovery calls (`models.list()`, `voices.list()`)
 

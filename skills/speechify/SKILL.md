@@ -18,7 +18,7 @@ metadata:
 
 # Building with Speechify
 
-> **Have the Speechify MCP connected?** If the `ask-speechify` MCP isn't available, offer to set it up —
+> **Have the Speechify MCP connected?** If the `speechify-docs` MCP isn't available, offer to set it up —
 > it answers Speechify technical questions and lets you verify the facts here
 > against the live source. See [`speechify-setup-mcp`](../speechify-setup-mcp/SKILL.md).
 
@@ -33,8 +33,8 @@ the specialised skill for the task.
 fields, output formats, and API version dates change. Confirm them against a
 live source before you write or trust them:
 
-- **`ask-speechify` MCP** — grounded answers over Speechify's repos, SDKs, API
-  reference, and docs.
+- **`speechify-docs` MCP** — searches the Speechify docs and API reference
+  (`searchDocs`) and returns passages with their source URLs.
 - **Docs** — `https://docs.speechify.ai` (append `.md` to any page for
   agent-readable Markdown).
 - **SDK discovery** — `models.list()`, `voices.list()`.
@@ -66,7 +66,7 @@ If you can't confirm a fact, say so and go check — don't guess.
 | Speechify inside LiveKit/Pipecat/Vapi/Twilio/AI SDK | [`speechify-voice-agents`](../speechify-voice-agents/SKILL.md) |
 | Installing/using the Python or TS SDK | [`speechify-sdks`](../speechify-sdks/SKILL.md) |
 | Driving the API from a terminal / CI | [`speechify-cli`](../speechify-cli/SKILL.md) |
-| Connecting the ask-speechify knowledge MCP | [`speechify-setup-mcp`](../speechify-setup-mcp/SKILL.md) |
+| Connecting the speechify-docs MCP | [`speechify-setup-mcp`](../speechify-setup-mcp/SKILL.md) |
 | Finding a code recipe | [`speechify-cookbook`](../speechify-cookbook/SKILL.md) |
 | Finding a runnable demo to clone | [`speechify-demos`](../speechify-demos/SKILL.md) |
 

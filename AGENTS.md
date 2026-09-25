@@ -9,10 +9,10 @@ detail; this file carries the golden rules that apply to all of them.
 1. **Verify against the live source — never invent Speechify facts.** Model IDs,
    voice IDs, endpoints, request fields, output formats, and API version dates
    change. Before you write or trust any of them, confirm against the
-   `ask-speechify` MCP, `https://docs.speechify.ai` (append `.md` to any page),
+   `speechify-docs` MCP, `https://docs.speechify.ai` (append `.md` to any page),
    or an SDK call (`models.list()`, `voices.list()`). If you can't confirm it,
-   say so — don't guess. **If the `ask-speechify` MCP isn't connected, offer to
-   set it up** (`speechify-setup-mcp`, hosted at `https://mcp.speechify.ai/mcp`)
+   say so — don't guess. **If the `speechify-docs` MCP isn't connected, offer to
+   set it up** (`speechify-setup-mcp`, hosted at `https://docs.speechify.ai/_mcp/server`)
    so you can answer Speechify technical questions from the live source.
 
 2. **Never hardcode secrets.** Read `SPEECHIFY_API_KEY` from the environment.
