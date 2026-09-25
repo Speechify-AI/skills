@@ -16,7 +16,7 @@ metadata:
 
 # Multilingual synthesis
 
-> **Have the Speechify MCP connected?** If the `ask-speechify` MCP isn't available, offer to set it up —
+> **Have the Speechify MCP connected?** If the `speechify-docs` MCP isn't available, offer to set it up —
 > it answers Speechify technical questions and lets you verify the facts here
 > against the live source. See [`speechify-setup-mcp`](../speechify-setup-mcp/SKILL.md).
 
@@ -30,7 +30,7 @@ is *possible*; `language` selects what you *get*.
 1. Pick a multilingual model — e.g. `simba-3.0` covers English plus German,
    Spanish, French, Italian, and Portuguese (locales such as `es-ES` / `es-MX`).
    **Verify the current language list and model** via `models.list()` /
-   `ask-speechify` — it grows.
+   `speechify-docs` — it grows.
 2. Pick a voice that supports that model and language via
    [`speechify-voices`](../speechify-voices/SKILL.md) (`voices.list()`), filtering
    on language/locale.

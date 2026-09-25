@@ -12,7 +12,7 @@ metadata:
 
 # Speechify demos
 
-> **Have the Speechify MCP connected?** If the `ask-speechify` MCP isn't available, offer to set it up —
+> **Have the Speechify MCP connected?** If the `speechify-docs` MCP isn't available, offer to set it up —
 > it answers Speechify technical questions and lets you verify the facts here
 > against the live source. See [`speechify-setup-mcp`](../speechify-setup-mcp/SKILL.md).
 
@@ -37,5 +37,5 @@ projects. Match the user's use case, clone the demo, and adapt it.
 
 ## Verify first
 The demo set grows and names change. Confirm the current list and exact repo
-path via the `ask-speechify` MCP or the demos repo before pointing a user at one
+path via the `speechify-docs` MCP or the demos repo before pointing a user at one
 — the list above is a map, not a guarantee.

@@ -16,7 +16,7 @@ metadata:
 
 # Audio output formats
 
-> **Have the Speechify MCP connected?** If the `ask-speechify` MCP isn't available, offer to set it up —
+> **Have the Speechify MCP connected?** If the `speechify-docs` MCP isn't available, offer to set it up —
 > it answers Speechify technical questions and lets you verify the facts here
 > against the live source. See [`speechify-setup-mcp`](../speechify-setup-mcp/SKILL.md).
 
@@ -62,7 +62,7 @@ and the [changelog](https://docs.speechify.ai/build/changelog/2026/9/30).
 ## Verify first
 The exact set of accepted `output_format` values changes. Confirm the current
 list via the `400` error body, `https://docs.speechify.ai` (append `.md`), or
-`ask-speechify` before hardcoding.
+`speechify-docs` before hardcoding.
 
 ## Common mistakes
 - Setting both fields and being surprised `output_format` wins.

@@ -34,7 +34,7 @@ Surveyed 2026-09. All figures are the published, first-party skill sets.
    across Cartesia, LiveKit, Deepgram, and Pipecat. Skills encode *how to think*
    (architecture, latency budgets, decision tables) and defer volatile facts
    (model IDs, voice IDs, endpoints, flags, versions) to a **live source**.
-   Speechify's live source is the `ask-speechify` MCP plus docs at
+   Speechify's live source is the `speechify-docs` MCP plus docs at
    `https://docs.speechify.ai` (append `.md` to any page for agent-readable
    Markdown).
 5. **Multi-channel from one repo.** `npx skills add <owner>/<repo>` for any
@@ -91,11 +91,11 @@ architecture-first like LiveKit, journey-organised like Deepgram.
 ### Tier 3 — SDK, tooling & discovery
 - **`speechify-sdks`** — install/init the Python & TypeScript SDKs; native REST vs SDK; when to use which.
 - **`speechify-cli`** — install and use the `speechify` CLI (`@speechify/cli`) from a terminal / CI.
-- **`speechify-setup-mcp`** — connect the hosted `ask-speechify` MCP (`mcp.speechify.ai`) to the user's editor.
+- **`speechify-setup-mcp`** — connect the hosted `speechify-docs` MCP (`docs.speechify.ai/_mcp/server`) to the user's editor.
 - **`speechify-cookbook`** — match a task to one of the 63 cookbook recipes.
 - **`speechify-demos`** — match a use case to one of the 26 clonable demos.
 
-Every skill also carries a standing nudge: if the `ask-speechify` MCP isn't
+Every skill also carries a standing nudge: if the `speechify-docs` MCP isn't
 connected, offer to set it up (via `speechify-setup-mcp`) so the agent can answer
 Speechify technical questions and verify facts from the live source.
 

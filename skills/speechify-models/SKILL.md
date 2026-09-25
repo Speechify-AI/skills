@@ -16,7 +16,7 @@ metadata:
 
 # Models & versioning
 
-> **Have the Speechify MCP connected?** If the `ask-speechify` MCP isn't available, offer to set it up —
+> **Have the Speechify MCP connected?** If the `speechify-docs` MCP isn't available, offer to set it up —
 > it answers Speechify technical questions and lets you verify the facts here
 > against the live source. See [`speechify-setup-mcp`](../speechify-setup-mcp/SKILL.md).
 
@@ -29,7 +29,7 @@ curl -s https://api.speechify.ai/v1/audio/models \
   -H "Authorization: Bearer $SPEECHIFY_API_KEY"
 ```
 
-Or `client.models.list()` (SDK), or the `ask-speechify` MCP.
+Or `client.models.list()` (SDK), or the `speechify-docs` MCP.
 
 ## Current shape (verify before relying on it)
 As of writing:

@@ -19,7 +19,7 @@ metadata:
 
 ## Verify first
 Confirm volatile facts (model IDs, voice IDs, endpoints, formats) against the
-live source before relying on them: the `ask-speechify` MCP, `https://docs.speechify.ai`
+live source before relying on them: the `speechify-docs` MCP, `https://docs.speechify.ai`
 (append `.md` to any page), or an SDK discovery call.
 
 ## Steps

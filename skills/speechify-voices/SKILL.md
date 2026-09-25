@@ -16,7 +16,7 @@ metadata:
 
 # Voices
 
-> **Have the Speechify MCP connected?** If the `ask-speechify` MCP isn't available, offer to set it up —
+> **Have the Speechify MCP connected?** If the `speechify-docs` MCP isn't available, offer to set it up —
 > it answers Speechify technical questions and lets you verify the facts here
 > against the live source. See [`speechify-setup-mcp`](../speechify-setup-mcp/SKILL.md).
 
@@ -47,7 +47,7 @@ Each voice carries metadata — confirmed fields include `id`, `display_name`,
 
 ## Verify first
 Confirm the exact response fields (`id` vs `voice_id`, nested language objects)
-against the API reference or `ask-speechify` — shapes evolve.
+against the API reference or `speechify-docs` — shapes evolve.
 
 ## Common mistakes
 - Reusing a `voice_id` from a tutorial that no longer exists → `400`/`404`.

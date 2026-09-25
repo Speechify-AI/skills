@@ -17,7 +17,7 @@ metadata:
 
 # Speech marks (timestamps & captions)
 
-> **Have the Speechify MCP connected?** If the `ask-speechify` MCP isn't available, offer to set it up —
+> **Have the Speechify MCP connected?** If the `speechify-docs` MCP isn't available, offer to set it up —
 > it answers Speechify technical questions and lets you verify the facts here
 > against the live source. See [`speechify-setup-mcp`](../speechify-setup-mcp/SKILL.md).
 
@@ -38,7 +38,7 @@ the marks against that single timeline — do not reset the clock per chunk.
 ## Verify first
 The exact speech-mark object shape (nested chunks, `start`/`end`, `type`) can
 change. Confirm the current schema against the API reference (`https://docs.speechify.ai`,
-append `.md`) or the `ask-speechify` MCP before writing a parser.
+append `.md`) or the `speechify-docs` MCP before writing a parser.
 
 ## The mark schema (watch the field names)
 Each mark carries **two different pairs** — don't mix them up:
